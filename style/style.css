@@ -1,0 +1,390 @@
+body, header, a, img, span, nav, main, aside, footer, div, p, article, section{
+	margin: 0;
+	padding: 0;
+} 
+
+body{
+	background-color: #EEECEC;
+	font-family: Helvetica, Arial, sans-serif;
+	color:#FFF;
+	font-size: 16px;
+	
+}
+
+/*Body background image*/
+/* For width smaller than 800px: */
+body {
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    background-size: cover; 
+    background-position: center center;
+    background-image: url('../img/background720.png');    
+}
+
+/* For width 800px and larger: */
+@media only screen and (min-width: 800px) {
+    body { 
+    background-repeat: no-repeat;
+   	background-size: 100% 100%; 
+    background-size: cover; 
+    background-position: center center;
+    background-image: url('../img/background800.png'); 
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    body { 
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    background-size: cover; 
+    background-position: center center;
+    background-image: url('../img/background1024.png'); 
+        
+    }
+}
+@media only screen and (min-width: 1280px) {
+    body { 
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    background-size: cover; 
+    background-position: center center;
+    background-image: url('../img/background1280.png');  
+    }
+}
+@media only screen and (min-width: 1440px) {
+    body {
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    background-size: cover;  
+    background-position: center center;
+    background-image: url('../img/background1440.png');   
+    }
+}
+@media only screen and (min-width: 1680px) {
+    body { 
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    background-size: cover; 
+    background-position: center center;
+    background-image: url('../img/background1680.png');   
+    }
+}
+@media only screen and (min-width: 1920px) {
+    body { 
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    background-size: cover; 
+    background-position: center center;
+    background-image: url('../img/background1920.png');
+    }
+}
+/* Body background end*/
+/* header & nested elements style*/
+header{
+	position: relative;
+	width: 90%;
+	height:180px;
+	margin-left: 5%;
+	margin-top: 2%;
+	/*background-image: url("../img/header_background1.png");
+	background-size: cover;                  
+    background-repeat: no-repeat;
+    background-position: center center; 
+    color: #666B78;*/
+}
+header #searchbar{
+	display: inline-block;
+	position: absolute;
+	top: 2px;
+	right:40%;
+	border-right: 2px solid #FFF;
+	padding-right: 25px;
+}
+
+
+
+header #login{
+	display: inline-block;
+	position: absolute;
+	top: 2px;
+	right:0%
+}
+header #logformspan{
+	position: absolute;
+	right: 10%;
+	top:20%;
+
+}
+h1{
+	font-family: 'Tangerine', serif;
+	font-size: 65px; 
+	font-weight: bold;
+	color: #FFF;
+	position: absolute;
+	top: 0%;
+	left: 33%
+
+
+
+}
+ul, li{
+	display: inline-block;
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+	font-size: 16px;
+	color: #FFF;
+
+
+}
+nav{
+	display: inline-block;
+	position: absolute;
+	bottom:0%;
+	left: 20%;
+	right: 20%;
+}
+
+nav ul{
+	padding-left: 0%;
+	margin-left: 20%;
+
+}
+
+nav ul li{
+	/*border: 1px solid black;*/
+	border-radius: 6px;
+	padding: 3px 2px;
+	margin: 2px 20px;
+	display: inline-block;
+	width:70px;
+	text-align: center;
+	background-color: rgba(213, 216, 220, 0.3);
+	opacity: 0.7;
+	color: #FFF;
+
+}
+nav ul li:hover{
+	background-color: rgba(213, 216, 220, 0.8);
+
+}
+/* style current page nav button*/
+#current li {
+	background-color: rgba(213, 216, 220, 0.3);
+}
+#current li:hover {
+	background-color: rgba(213, 216, 220, 0.9);
+}
+#current a{
+	/*color:#666B78;*/
+	color: #053D02;
+	font-weight: bold;
+	font-size: 16px;
+}
+/*end tyle current page nav button*/
+
+nav ul li a{
+	/*color:#666B78;*/
+	color: #FFF;
+	font-weight: bold;
+}
+
+
+
+
+/*Main style */
+main{
+	position: relative;
+	width: 90%;
+	height:500px;
+	margin-left: 5%;
+}
+aside{
+	position: absolute;
+	display: inline-block;
+	top:30%;
+
+}
+aside h5{
+	text-align: center;
+	
+	}
+aside ul{
+	margin-left: 2px;
+	
+
+	}
+aside ul li{
+	display: block;
+	padding: 1px;
+	margin: auto;
+	
+}
+aside ul li a{
+		color: #FFF;
+	
+
+}
+aside ul li a:hover {
+	
+	color: #5D5E65;
+
+}
+
+.wrap{
+	display: inline-block;
+	position: absolute;
+	height: 490px;
+	right: 1.5%;
+	top:1%;
+	width: 82%;
+}
+.wrap section{
+	display: inline-block;
+	/*position: absolute;*/
+	height: 455px;
+	width: 23.5%;
+	margin: 0.3%;
+}
+.wrap section span{
+	display: inline-block;
+	width: 98%;
+	text-align: center;
+	padding-top: 8%;
+}
+.wrap h4{
+	text-align: center;
+	width: 98%;
+}
+.wrap section img{
+	display: block;
+	width: 198px;
+	margin: auto;
+	
+}
+.wrap section p{
+	padding-top: 3%;
+}
+
+/*Footer*/
+footer{
+	position: relative;
+	width: 90%;
+	height:100px;
+	margin-left: 5%;
+}
+footer div p{
+	display: block;
+	position: absolute;
+	top: 1%;
+	left:25%;
+	font-size: 14px;
+}
+#span_date{
+	padding-left:20px;
+	padding-right: 20px;
+	border-left: 2px solid #FFF;
+	border-right: 2px solid #FFF;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+/*page2 services.html styling*/
+#page2section1{
+	display: inline-block;
+	position: absolute;
+	top:1%;
+	height: 400px;
+	width: 48.5%;
+	padding: 1px;
+	border-right: 1px dotted #FFF;
+	border-bottom: 2px dotted #FFF;
+		
+}
+
+#page2section2{
+	display: inline-block;
+	position: absolute;
+	top:1%;
+	left: 50%;
+	height: 400px;
+	width: 48.5%;
+	padding: 1px;
+	border-left: 1px dotted #FFF;
+	border-top: 2px dotted #FFF;
+}
+
+.wrap #page2section1 p, .wrap #page2section2  p{
+	padding-left: 3px;
+	text-align: justify;
+	color: #494343;
+}
+/*page 2 banner position*/
+.banner{
+	display: inline-block;
+	position: fixed;
+	right: 0;
+	top:30%;
+}
+.banner img{
+	opacity:0.6
+
+}
+.banner img:hover{
+	opacity: 0.9;
+}
+
+/*signup.html unique elements styling*/
+
+#page3section1{
+	display: inline-block;
+	position: absolute;
+	top:1%;
+	height: 400px;
+	width: 49.5%;
+	padding: 0;
+	
+}
+/* sign up forms styling*/
+#page3section1 form p{
+	padding: 2px;
+	
+}
+
+#page3section1 form{
+overflow: hidden;
+}
+#page3section2{
+	display: inline-block;
+	position: absolute;
+	top:1%;
+	left: 50%;
+	height: 400px;
+	width: 49%;
+	padding: 0;
+	
+
+}
+.wrap #page3section2 p{
+	padding-left: 3px;
+	text-align: justify;
+	font-weight: bold;
+	color: #494343;
+}
+/*end of signup.html unique elements styling*/
+/*contacts.html unique elements styling*/
+
+.wrap #page3section1 span{
+	display: block;
+	padding: 1px 1px;
+	font-weight: bold;
+}
+
+.wrap #page3section2 #map {
+        height: 300px;
+        width: 95%;
+        margin: auto;
+        overflow: hidden;
+}
+
+ /* end of contacts styling */

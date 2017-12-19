@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Green Home Project</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<!--Header-->
+	<header>
+		<h1>Green Home Project</h1>
+		<form id="searchbar" method="get" action="php/missing.php">
+			<label for="searchform">Search page</label>
+			<input id="searchform" type="text" name="searchbar" value="" placeholder="Search...">
+			<button type="submit" class="btn btn-success">
+    		<i class="fa fa-search" aria-hidden="true"></i>Search
+			</button>	
+		</form>
+		<form id="login" method="get" action="php/missing.php">
+			<label for="logform">Log in</label>
+			<input id="logform" type="text" name="user" value="" placeholder="Username">
+			<input type="password" name="pass" value="" placeholder="Password">
+			<button type="submit" class="btn btn-success">
+    		<i class="fa fa-sign-in" aria-hidden="true"></i>
+			</button>	
+		</form>
+			<span id="logformspan">Not Registered?
+				<a href="registration.html">Sign Up Here</a>
+			</span>		
+		<nav>
+			<ul >
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="services.html">Services</a>
+				</li>
+				<li>
+					<a href="signup.html">Sign in</a>
+				</li>
+				<li id="current">
+					<a href="contacts.html">Contacts</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<!--Main with sidebar and two sections inside-->
+	<main>
+		<aside>
+			<h5>Links&#160;<i class="fa fa-link fa-1x" aria-hidden="true"></i></h5>
+			<ul>
+				<li>
+				<a href="index.html">Home</a>
+				</li>
+				<li>
+				<a href="services.html">Services</a>
+				</li>
+				<li>
+					<a href="http://www.wikipedia.org">External links</a>
+				</li>
+				<li>
+					<a href="signup.html">Terms&conditions</a>
+				</li>
+			</ul>
+		</aside>
+		<!--Sections-->
+		<div class="wrap">
+			<section id="page3section1">
+				<h4>Contact US</h4>
+				<span>Vratsa, Bulgaria</span>
+				<span>767 Hristo Botev Street</span>
+				<span>Floor 7 Office 2</span>
+				<span><a href="mailto:bp.krastev@gmail.com">e-mail office@schoolproject.com</a></span>
+				<h4>Online Customer Support</h4>
+				<span>+359 888 111 222 333</span>
+				<span>+359 888 333 444 555</span>
+				
+			</section>
+			<section id="page3section2">
+				<h4>Location</h4>
+			<div id="map"></div>
+    		<script>
+      			function initMap() {
+        		var uluru = {lat: 43.201525, lng: 23.548721};
+        		var map = new google.maps.Map(document.getElementById('map'), {
+          		zoom: 15,
+          		center: uluru
+       			 });
+        		var marker = new google.maps.Marker({
+          		position: uluru,
+          		map: map
+        		});
+    			  }
+    			</script>
+    			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCySblEOBjDC4HEMszgI7gZElJUm-Zy8Jc&callback=initMap">
+   			 </script>
+		</section>
+				</div>		
+	</main>
+	<!--Footer-->
+	<footer>
+		<div id="footer">
+			<p>
+				<span>
+					Borislav Krastev HTML&CSS Project
+				</span>
+				<span id="span_date">
+					Date 12/2017
+				</span>
+				<span>
+					<a href="mailto:bp.krastev@gmail.com">Email Me</a> 
+				</span>
+			</p>
+		</div>
+		
+	</footer>
+	
+</body>
+</html>
